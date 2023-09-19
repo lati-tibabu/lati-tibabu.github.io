@@ -1,0 +1,284 @@
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Dosis', sans-serif; */
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans'; */
+}
+
+body{
+    transition: 0.8s;
+}
+
+header {
+    /* width: 100%; */
+    height: 10vh;
+    background-color: black;
+    padding: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    color: white;
+    font-family: Mulish;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-right: 10%;
+}
+
+.navbar {
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header ul a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 300px;
+}
+
+#welcome-section {
+    height: 80vh;
+    background-color: rgb(0, 6, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-messages h1 {
+    color: wheat;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.welcome-messages p {
+    /* font-family: 'Mulish', 'Courier New', Courier, monospace, sans-serif; */
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    color: wheat;
+}
+
+.welcome-messages p::before {
+    content: "< ";
+    /* color: rgb(255, 94, 0); */
+    font-weight: 600;
+}
+
+.welcome-messages p::after {
+    content: " />";
+    /* color: rgb(255, 94, 0); */
+    font-weight: 600;
+}
+
+#about {
+    /* background-color: rebeccapurple; */
+    background: rgba(0, 6, 34, 0.727) url("https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=900&t=st=1691078018~exp=1691078618~hmac=37876ef44b19c185b444665e63249fe3d8f3bbbf3da030daf04cb7770530ef20");
+    background-blend-mode: color-dodge;
+    background-size: cover;
+    background-position: center;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.about-me-text {
+    background-color: rgba(36, 36, 36, 0.216);
+    backdrop-filter: blur(10px) brightness(80%);
+    width: 550px;
+    border-radius: 0 35px 35px 35px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content p {
+    height: fit-content;
+    padding: 30px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Mulish', sans-serif; */
+}
+
+.my-photo {
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    top: 122.3%;
+    left: 15%;
+}
+
+#projects{
+    background-color: rgb(0, 6, 34);
+
+    /* background-color: rebeccapurple; */
+}
+
+.project-detail{
+    /* background-color: rgb(239, 239, 239); */
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.project-detail::-webkit-scrollbar{
+    opacity: 0;
+}
+
+.project-content{
+    padding: 10px;
+    width: fit-content;
+    background-color: rgba(240, 248, 255, 0.549);
+    border-radius: 10px;
+}
+
+.project-title{
+    padding: 10px;
+    display: flex;
+}
+
+.project-title a{
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-title a:hover{
+    text-decoration: underline;
+}
+
+.project-image img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project-image img:hover{
+    cursor: pointer;
+}
+
+#contact-me{
+    background-color: rgb(0, 6, 34);
+    padding-bottom: 30vh;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.fa-brands{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.fa-brands:hover{
+    /* color: #0072b1; */
+    transition: 0.6s ease-in-out;
+    transform: rotate(360deg);
+}
+
+footer{
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    color: white;
+}
+
+@media screen and (max-width:700px) {
+    .logo{
+        font-size: 2rem;
+    }
+
+    .navbar a{
+        font-size: 0.9rem;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .welcome-messages h1{
+        color: white;
+        font-size: 2rem;
+    }
+
+    .welcome-messages p{
+        font-size: 0.8rem;
+    }
+
+    .about-me-text{
+        width: 100%;
+        min-width: 300px;
+        max-width: 500px;
+        border-radius: 10px;
+        margin-top: 40%;
+    }
+
+    .my-photo{
+        width: 200px;
+        border-radius: 50%;
+        top: 120%;
+        left: 30%;
+    }
+
+    .project-detail{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .fa-brands{
+        font-size: 2rem;
+    }
+}
